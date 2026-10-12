@@ -11,7 +11,7 @@ Vehicle side missions are included: Paramedic (ambulance), Vigilante (police veh
 
 ## Downloads
 
-When a release is available, download `SaDiscordPresence.zip` from this repository's **Releases** page.
+Download the ZIP from the [latest release](https://github.com/HendrikFernandez/sa-discord-presence/releases/latest). The public ZIP includes a blank `SaDiscordPresence.ini`. Before installing, enter a Discord Application ID in its `ApplicationId` field. You can create an application in the [Discord Developer Portal](https://discord.com/developers/applications).
 
 ## Build
 
