@@ -1,0 +1,4 @@
+[Discord]
+ApplicationId=
+; Optional Rich Presence asset key uploaded in the Discord Developer Portal.
+LargeImageKey=

@@ -1,0 +1,6 @@
+/build/
+/.build-tools/
+/.vs/
+/dist/
+/SaDiscordPresence.zip
+/SaDiscordPresence.ini
