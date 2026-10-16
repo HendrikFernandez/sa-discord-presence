@@ -7,6 +7,8 @@ A 32-bit ASI plugin for the **classic PC GTA San Andreas 1.0 US executable**. Di
 
 The plugin samples game state every five seconds and only sends changes. It reads game state on the game thread and uses Discord's legacy `discord-rpc` library for the background IPC connection. No account token or bot is needed.
 
+The elapsed timer tracks the game session and continues through mission, location, and other presence changes.
+
 Vehicle side missions are included: Paramedic (ambulance), Vigilante (police vehicles), Firefighter (fire truck), Taxi Driver, Burglary, and Freight Train. The mission detector checks active mission scripts, so these can appear even when the storyline mission flag is clear.
 
 ## Downloads

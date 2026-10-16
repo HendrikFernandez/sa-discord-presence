@@ -6,6 +6,7 @@
 #include <cstdint>
 #include <cstdio>
 #include <cstring>
+#include <ctime>
 #include <string>
 
 #include "plugin_sa.h"
@@ -202,6 +203,7 @@ private:
         DiscordRichPresence rpc{};
         rpc.details = previous_.details.c_str();
         rpc.state = previous_.state.c_str();
+        rpc.startTimestamp = start_timestamp_;
         rpc.largeImageKey = image_key_.empty() ? nullptr : image_key_.c_str();
         rpc.largeImageText = "Grand Theft Auto: San Andreas";
         Discord_UpdatePresence(&rpc);
@@ -219,6 +221,7 @@ private:
     std::string image_key_;
     std::string missions_path_;
     Presence previous_;
+    const int64_t start_timestamp_ = static_cast<int64_t>(std::time(nullptr));
     DWORD last_update_ = 0;
     bool initialized_ = false;
     bool sent_ = false;
